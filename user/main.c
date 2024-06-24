@@ -252,34 +252,16 @@ int main(void)
 	  LED_Init();
 		LED_GPIO_Config();
 	  LED_Init2();		  	//数码管初始化函数
-
-		
+		/*
 		while(1)
 		{
-			for(i=0;i<100;i++)zero();
-			
-			for(i=0;i<100;i++)one();
-			
-			for(i=0;i<100;i++)two();
-			
-			for(i=0;i<100;i++)three();
-			
-			for(i=0;i<100;i++)four();
-			
-			for(i=0;i<100;i++)five();
-			
-			for(i=0;i<100;i++)six();
-			
-			for(i=0;i<100;i++)seven();
-			
-			for(i=0;i<100;i++)eight();
-			
-			for(i=0;i<100;i++)nine();
-			
-			for(i=0;i<100;i++)xin();
+			LED1(ON);
+			LED2(ON);
+		//	for(i=0;i<100;i++)eight();
+			for(i=0;i<100;i++) xin();
 			
 		}
-	
+	*/
 		while(1)
 		{
 				LED2(OFF);
@@ -309,12 +291,14 @@ int main(void)
 							LED1(ON); LED4(ON); LED7(ON);
 							rg ++;
 							
+								eight();                                                                                             
 							int j;
 							int a = lr / 10;
 							int b = lr % 10;
 							int c = sr / 10;
 							int d = sr % 10;
-							for (j = 300; j >= 0; j --) {
+							for (j = 100; j >= 0; j --) {
+								eight();
 								changegree();
 								if (rg >= g ) break;
 								Display2(a);F0=0;delay_ms(1);F0=1;
@@ -332,6 +316,7 @@ int main(void)
 						}
 						changegree();
 								
+								nine();
 						if (ry < y) {
 							ry ++;
 							if (ry == y) {
@@ -345,7 +330,8 @@ int main(void)
 							int c = sr / 10;
 							int d = sr % 10;
 							int j;
-							for (j = 300; j >= 0; j --) {
+							for (j = 100; j >= 0; j --) {
+								nine();
 								changegree();
 								if (ry >= y ) break;
 								Display2(a);F0=0;delay_ms(1);F0=1;
@@ -368,6 +354,7 @@ int main(void)
 						}
 						changegree();
 						
+								nine();
 						if (sg < g) {
 							LED2(OFF); LED3(OFF); LED4(OFF); LED6(OFF); LED7(OFF);
 							LED1(ON); LED5(ON); LED8(ON);
@@ -378,7 +365,8 @@ int main(void)
 							int c = rr / 10;
 							int d = rr % 10;
 							int j;
-							for (j = 300; j >= 0; j --) {
+							for (j = 100; j >= 0; j --) {
+								nine();
 								changegree();
 								if (sg >= g ) break;
 								Display2(a);F0=0;delay_ms(1);F0=1;
@@ -396,6 +384,7 @@ int main(void)
 							continue;
 						}
 						changegree();
+								nine();
 								
 						if (sy < y) {
 							sy ++;
@@ -414,7 +403,8 @@ int main(void)
 							int b = lr % 10;
 							int c = rr / 10;
 							int d = rr % 10;
-							for (j = 300; j >= 0; j --) {
+							for (j = 100; j >= 0; j --) {
+								nine();
 								changegree();
 								if (sy >= y) break;
 								Display2(a);F0=0;delay_ms(1);F0=1;
@@ -433,6 +423,7 @@ int main(void)
 						}
 						
 						changegree();
+								nine();
 								
 						if (lg < g) {
 							lg ++;
@@ -445,7 +436,8 @@ int main(void)
 							int b = sr % 10;
 							int c = rr / 10;
 							int d = rr % 10;
-							for (j = 300; j >= 0; j --) {
+							for (j = 100; j >= 0; j --) {
+								nine();
 								changegree();
 								if (lg >=g) break;
 								Display2(0);F0=0;delay_ms(1);F0=1;
@@ -463,6 +455,7 @@ int main(void)
 							continue;
 						}
 						changegree();
+								nine();
 								
 						if (ly < y) {
 							ly ++;
@@ -481,7 +474,8 @@ int main(void)
 							int b = sr % 10;
 							int c = rr / 10;
 							int d = rr % 10;
-							for (j = 300; j >= 0; j --) {
+							for (j = 100; j >= 0; j --) {
+								nine();
 								changegree();
 								if (ly >= y ) break;
 								Display2(0);F0=0;delay_ms(1);F0=1;

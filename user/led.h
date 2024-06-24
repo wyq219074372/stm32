@@ -67,14 +67,14 @@ void Beep_Init(void);
 #define __LED_H	 
 
 // 2222222222222222222222
-#define DX0 PAout(0)
-#define DX1 PAout(1)
-#define DX2 PAout(2)
-#define DX3 PAout(3)
-#define DX4 PAout(4)
-#define DX5 PAout(5)
-#define DX6 PAout(6)
-#define DX7 PAout(7)
+#define DX0 PBout(3)
+#define DX1 PBout(4)
+#define DX2 PBout(5)
+#define DX3 PBout(6)
+#define DX4 PBout(7)
+#define DX5 PBout(8)
+#define DX6 PBout(9)
+#define DX7 PBout(10)
 
 #define D0 PEout(0)
 #define D1 PEout(1)

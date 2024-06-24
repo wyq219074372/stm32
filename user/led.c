@@ -133,7 +133,8 @@ void NixieTubes_Init(void)
 		u16 num[16] = {0x3f, 0x06, 0x5b, 0x4f, 
 									 0x66, 0x6d, 0x7d, 0x07, 
 									 0x7f, 0x6F, 0x77, 0x7c, 
-									 0x39, 0x5e, 0x79, 0x71};
+									 0x39, 0x5e, 0x79, 0x71
+		};
 		s16 j;
 		j=value;
 
@@ -245,17 +246,16 @@ void Beep_off(void)
 
 u8 seg_tab[88] = {
 									0xff, 0x99, 0x66, 0x7e, 0x7e, 0xbd, 0xdb, 0xe7,      //ÐÄ
-									//0xe7, 0xdb, 0x99, 0x99, 0x99, 0x99, 0xdb, 0xe7,      //0
-	                0xe7,0xdb,0xdb,0xdb,0xdb,0xdb,0xdb,0xe7,//0
+	                0xe7, 0xdb, 0xdb, 0xdb, 0xdb, 0xdb, 0xdb, 0xe7,			//0
 									0xe7, 0xc7, 0xa7, 0xe7, 0xe7, 0xe7, 0xe7, 0xe7,      //1
 									0xc3, 0x99, 0x99, 0xf1, 0xe3, 0xc7, 0x8f, 0x81,      //2
 									0xc3, 0x99, 0xf9, 0xe3, 0xe3, 0xf9, 0x99, 0xc3,      //3
 									0xf3, 0xe3, 0xc3, 0x93, 0xb3, 0x81, 0xf3, 0xf3,      //4
 									0xc3, 0x9f, 0x9f, 0x83, 0xc1, 0xf9, 0xf9, 0xc3,      //5
-									0xc3, 0x9f, 0x9f, 0x83, 0x81, 0x99, 0x99, 0xc3,      //6
-									0x81, 0x81, 0xf9, 0xf1, 0xe3, 0xe7, 0xe7, 0xe7,      //7
-									0xc3, 0x99, 0x99, 0x81, 0x81, 0x99, 0x99, 0xc3,      //8
-									0xc3, 0x99, 0x99, 0x81, 0xc1, 0xf9, 0xf9, 0xc3       //9				
+									0x99, 0x99, 0x99, 0x99, 0x99, 0x99, 0x99, 0x99,      //6
+									0xe7 ,0xe7 ,0xe7 ,0xe7 ,0xe7 ,0xff ,0xe7 ,0xe7,      //!
+									0xdf ,0x80 ,0x00 ,0x80 ,0xd8 ,0xf8 ,0xf8 ,0xf8,      //straight
+									0xe7 ,0xc3 ,0x81 ,0x00 ,0xe7 ,0xe7 ,0xe7 ,0xe7       //turn_left	
 };
 
 void LED_Init(void){
@@ -540,9 +540,129 @@ void four(void){
 }
 void five(void){}
 void six(void){}
-void seven(void){}
-void eight(void){}
-void nine(void){}
+void seven(void){
+				Display(72);
+    		D0=0;
+				delay_ms(1);
+				D0=1;
+		
+				Display(73);
+    		D1=0;
+				delay_ms(1);
+				D1=1;
+		
+				Display(74);
+    		D2=0;
+				delay_ms(1);
+				D2=1;
+		
+			  Display(75);
+    		D3=0;
+				delay_ms(1);
+				D3=1;
+		
+				Display(76);
+    		D4=0;
+				delay_ms(1);
+				D4=1;
+				
+				Display(77);
+    		D5=0;
+				delay_ms(1);
+				D5=1;
+				
+				Display(78);
+    		D6=0;
+				delay_ms(1);
+				D6=1;
+				
+				Display(79);
+    		D7=0;
+				delay_ms(1);
+				D7=1;
+}
+void eight(void){
+				Display(80);
+    		D0=0;
+				delay_ms(1);
+				D0=1;
+		
+				Display(81);
+    		D1=0;
+				delay_ms(1);
+				D1=1;
+		
+				Display(82);
+    		D2=0;
+				delay_ms(1);
+				D2=1;
+		
+			  Display(83);
+    		D3=0;
+				delay_ms(1);
+				D3=1;
+		
+				Display(84);
+    		D4=0;
+				delay_ms(1);
+				D4=1;
+				
+				Display(85);
+    		D5=0;
+				delay_ms(1);
+				D5=1;
+				
+				Display(86);
+    		D6=0;
+				delay_ms(1);
+				D6=1;
+				
+				Display(87);
+    		D7=0;
+				delay_ms(1);
+				D7=1;
+}
+void nine(void){
+				Display(64);
+    		D0=0;
+				delay_ms(1);
+				D0=1;
+		
+				Display(65);
+    		D1=0;
+				delay_ms(1);
+				D1=1;
+		
+				Display(66);
+    		D2=0;
+				delay_ms(1);
+				D2=1;
+		
+			  Display(67);
+    		D3=0;
+				delay_ms(1);
+				D3=1;
+		
+				Display(68);
+    		D4=0;
+				delay_ms(1);
+				D4=1;
+				
+				Display(69);
+    		D5=0;
+				delay_ms(1);
+				D5=1;
+				
+				Display(70);
+    		D6=0;
+				delay_ms(1);
+				D6=1;
+				
+				Display(71);
+    		D7=0;
+				delay_ms(1);
+				D7=1;
+}
 
 
 /******************* (C) COPYRIGHT 2012 WildFire Team *****END OF FILE************/
